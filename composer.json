@@ -1,8 +1,8 @@
 {
     "name": "i-lateral/silverstripe-themes-kube-commerce",
-    "description": "A simple Silverstripe theme that makes use of the Kube CSS framework (400).",
+    "description": "A simple Silverstripe theme that makes use of the Kube CSS framework and is designed to work with the Commerce extension.",
 	"type": "silverstripe-theme",
-	"homepage": "http://github.com/i-lateral/silverstripe-themes-kube",
+	"homepage": "http://github.com/i-lateral/silverstripe-themes-kube-commerce",
 	"keywords": ["silverstripe", "theme", "kube", "commerce"],
 	"license": "BSD-3-Clause",
 	"authors": [
@@ -21,6 +21,6 @@
         "i-lateral/silverstripe-commerce": "2.0.*@dev"
 	},
 	"extra": {
-		"installer-name": "kube"
+		"installer-name": "kube-commerce"
 	}
 }
