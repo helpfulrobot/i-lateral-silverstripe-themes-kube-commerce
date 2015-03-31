@@ -1,0 +1,111 @@
+/* DEVICE & RESPONSIVE LAYOUT
+--------------------------------------- */
+@media only screen and (max-width: 767px) {
+    
+    .inner {
+        padding: 0 20px;
+    }
+    
+    #media-query-trigger {
+        visibility: visible;
+    }
+    
+    
+    /* HEADER
+    --------------------------------------- */
+    .header {
+        padding: 0;
+        
+        .brand {
+            margin-bottom: 0.5em;
+        }
+        
+        .navigation {
+            &.no-searchform {
+                padding-top: 0;
+            }
+            
+            .navigation-toggle {
+                margin-bottom: 0;
+                background-position: 97% 10px;
+                
+                span {
+                    padding: 10px;
+                }
+            }
+            
+            .navbar-main {
+                width: 100%;
+                float: none;
+                background-color: @color-white;
+                margin-bottom: 0;
+                
+                li a {
+                    color: @color-black;
+                    padding: 0.4em 0.5em;
+                    border-bottom: 1px solid @color-gray-light
+                }
+            }
+        }
+    }
+
+    /* Search Form
+    --------------------------------------- */
+    .search-bar { /* adds new styling to mobile search bar */
+        width: 100%;
+        position: relative;
+        top: 0;
+        right: 0;
+        display: none; /* hides searchbar initially */
+        padding: 20px 0;
+        margin: 0;
+        background-color: #E7E7E7;
+    }
+    .search-dropdown-icon { /* styling for search toggle button */
+        display: block;
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 60px;
+        top: 34px;
+        font-family: 'WebSymbolsRegular';
+        font-size: 20px;
+        color: #ededed;
+        text-align: center;
+        line-height: 20px;
+    }
+    .search-bar form {
+        margin: 0;
+        width: 100%;
+    }
+        .search-bar form fieldset {
+            padding: 0 18px;
+            left: 0;
+            right: 0;
+            position: relative;
+        }
+    .search-bar div.field {
+        margin-bottom: 0;
+    }
+    .search-bar form input.text {
+        width: 89%; /* makes search input full width - allowing for space either side */
+        max-width: 89%;
+        padding: 8px 10% 8px 1%;
+        text-indent: 15px;
+        position: relative;
+        display: block;
+        right: 0;
+        left: 0;
+        border: 1px solid #e5e5e5;
+        background: #fff;
+        font-size: 17px;
+        -moz-border-radius: 20px; /* increase border radius due to increased padding */
+        border-radius: 20px;
+    }
+    .search-bar form input.action {
+        right: 5%;
+        top: 2px;
+        font-size: 18px;
+    }
+}

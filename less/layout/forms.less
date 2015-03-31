@@ -1,0 +1,111 @@
+.forms {
+    .field {
+        padding-bottom: .75em;
+        
+        label {
+            margin-bottom: .1em;
+            font-size: 0.9em;
+            
+            &.left,
+            &.right {
+                float: none;
+                display: block;
+            }
+        }
+        
+        .middleColumn {
+            width: 100%;
+            
+            input[type="text"],
+            input[type="password"],
+            input[type="email"],
+            input[type="url"],
+            input[type="phone"],
+            input[type="tel"],
+            input[type="number"],
+            input[type="datetime"],
+            input[type="date"],
+            input[type="search"],
+            input[type="range"],
+            input[type="file"],
+            input[type="datetime-local"],
+            textarea,
+            select,
+            button {
+                width: 99.75%;
+            }
+        }
+        
+        &.optionset {
+        
+            ul {
+                list-style: none;
+                margin-left: 0;
+                
+                label {
+                    display: inline;
+                }
+            }
+        }
+        
+        input.checkbox {
+            top: 2px;
+        }
+    }
+    
+    .Actions {
+        text-align: right;
+    }
+}
+
+.forms-inline,
+.forms-inline-list {
+    
+    .field {
+        .clearfix();
+        
+        padding-bottom: 0.5em;
+    
+        label {
+            margin-bottom: .1em;
+            font-size: 0.9em;
+            
+            &.left {
+                width: 25%;
+                float: left;
+            }
+            &.right {
+                width: 100%;
+                text-align: right;
+            }
+        }
+        
+        .middleColumn {
+            float: right;
+            width: 70%;
+            
+            input[type="text"],
+            input[type="password"],
+            input[type="email"],
+            input[type="url"],
+            input[type="phone"],
+            input[type="tel"],
+            input[type="number"],
+            input[type="datetime"],
+            input[type="date"],
+            input[type="search"],
+            input[type="range"],
+            input[type="file"],
+            input[type="datetime-local"],
+            textarea,
+            select,
+            button {
+                width: 99.75%;
+            }
+        }
+        
+        input.checkbox {
+            top: 2px;
+        }
+    }
+}

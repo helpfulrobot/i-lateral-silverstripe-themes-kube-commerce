@@ -1,0 +1,85 @@
+@import "variables.less";
+@import "mixins.less";
+
+/* Kube Typography */
+@import "kube/reset.less";
+@import "kube/typography.less";
+@import "kube/typography-responsive.less";
+
+
+/* Silverstripe Styling
+-------------------------------------------- */
+
+/* LIST STYLES
+-------------------------------------------- */
+.typography ul,
+.typography ol {
+    margin: 0 0 0.5em 24px;
+}
+.typography li {
+    margin: 0 0 0.5em 0;
+}
+
+/* HEADER STYLES
+-------------------------------------------- */
+.typography h1 {
+    font-size: 1.5em;
+    margin-bottom: 0.75em;
+}
+.typography h2 {
+    font-size: 1.2em;
+}
+.typography h3 {
+    font-size: 1em;
+}
+.typography h4 {
+    font-size: 0.75em;
+}
+.typography h5 {
+    font-size: 0.75em;
+}
+.typography h6 {
+    font-size: 0.75em;
+}
+
+/* PARAGRAPHS
+-------------------------------------------- */
+.typography p {
+    font-size: 0.9em;
+    margin-bottom: 0.75em;
+}
+
+/* WYSIWYG EDITOR ALIGNMENT CLASSES
+-------------------------------------------- */
+.typography .left {
+    text-align: left;
+}
+.typography .center {
+    text-align: center;
+}
+.typography .right {
+    text-align: right;
+}
+
+/* IMAGES
+-------------------------------------------- */
+.typography img {
+    border: none;
+}
+.typography img.right {
+    float: right;
+    margin-left: 20px;
+}
+.typography img.left {
+    float: left;
+}
+.typography img.leftAlone {
+    float: left;
+    margin-right: 100%;
+}
+.typography img.center {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
