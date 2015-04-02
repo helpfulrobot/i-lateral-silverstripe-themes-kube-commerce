@@ -102,7 +102,8 @@
         </div>
 
         <% require javascript('framework/thirdparty/jquery/jquery.js') %>
-        <% require javascript('themes/kube/javascript/kube/navigation-toggle.js') %>
-        <% require javascript('themes/kube/javascript/script.js') %>
+        <% require javascript('themes/kube-commerce/javascript/kube/navigation-toggle.js') %>
+        <% require javascript('themes/kube-commerce/javascript/kube/dropdown.js') %>
+        <% require javascript('themes/kube-commerce/javascript/script.js') %>
     </body>
 </html>
