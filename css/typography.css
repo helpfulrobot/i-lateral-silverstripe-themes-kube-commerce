@@ -324,7 +324,7 @@ h6,
 .lead {
   font-size: 1.3125em;
   line-height: 1.5;
-  margin-bottom: 1.0999999999999999em;
+  margin-bottom: 1.1em;
 }
 /* =Line height and margin
 -----------------------------------------------------------------------------*/
@@ -377,7 +377,7 @@ blockquote {
   position: relative;
   font-style: italic;
   font-size: 1.125em;
-  margin-left: 2.4749999999999996em;
+  margin-left: 2.475em;
   padding-left: 1.65em;
   border-left: 2px solid #dddddd;
 }
@@ -600,14 +600,14 @@ table {
 }
 table caption {
   text-transform: uppercase;
-  padding: 0 1.0999999999999999em;
+  padding: 0 1.1em;
   color: rgba(0, 0, 0, 0.4);
   font-size: 12.75px;
 }
 table th,
 table td {
   border-bottom: 1px solid #eeeeee;
-  padding: 0.825em 1.0999999999999999em;
+  padding: 0.825em 1.1em;
 }
 table tfoot th,
 table tfoot td {

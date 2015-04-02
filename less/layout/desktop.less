@@ -88,6 +88,9 @@ body {
                 color: @color-red;
             }
         }
+        #navbar-header {
+			padding-top: 0.25em;
+		}
         
         .navbar-main {
         
@@ -103,14 +106,16 @@ body {
 /* Search form
 --------------------------------------- */
 .search-bar {
+	float: right;
     position: relative;
     min-height: 3.5em;
+    padding-left: 1.65em;
     
     form {
-        position: absolute;
-        right: 0;
     
         fieldset {
+			display: inline-block;
+			position: relative;
             padding: 0;
             border: 0;
         }
@@ -119,8 +124,7 @@ body {
             padding: 0;
         }
         input.text {
-            width: 155px;
-            padding: 5px 34px 5px 15px;
+            padding: 3px 34px 3px 15px;
             color: #888;
             margin: 0;
             border: none;
@@ -128,18 +132,19 @@ body {
             background: @color-white;
         }
         input.action {
+			position: absolute;
+			right: 0.25em;
+			top: 1px;
             font-size: 14px;
-            position: absolute;
-            right: 5px;
-            top: 0;
             cursor: pointer;
             border: none;
             padding: 5px;
             background: none;
-            font-family: 'WebSymbolsRegular';
+            font-family: 'FontAwesome';
             color: @color-gray-dark;
             border-radius: 0;
             margin: 0;
+            z-index:9;
         }
         input.active,
         input.action:hover {
