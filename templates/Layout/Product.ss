@@ -29,7 +29,6 @@ $SessionMessage
         <div class="unit-50 unit size1of2 catalogue-product-summary">
             <p>
                 <span class="price label big label-green">
-                    <span class="title"><%t Catalogue.Price "Price" %>:</span>
                     <span class="value">
                         <% if $IncludesTax %>
                             {$PriceAndTax.nice}
