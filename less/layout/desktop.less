@@ -71,9 +71,6 @@ body {
     
     /** Nav area */
     .navigation {
-        &.no-searchform {
-            padding-top: 3.65em;
-        }
     
         .navbar {
             float: right;
@@ -87,7 +84,43 @@ body {
             li.current a {
                 color: @color-red;
             }
+			.cart-holder {
+				position: relative;
+				.cart-link {
+					margin-right: 0.75em;
+					&:after {
+						content: "\f0da";
+						position:  relative;
+						right: -1em;
+						font-family: 'FontAwesome';
+						width: 10px;
+						display: inline-block;
+					}
+					&.dropdown-in:after {
+						content: "\f0d7";
+					}	
+				}
+				#cart-summary {
+					display: none;
+					left: auto !important;
+					top: auto !important;
+					width: auto !important;
+					right: 0;
+					min-width: 400px;
+					max-width: 600px;
+					background: @color-white;
+					padding: @base-line 20px 0;
+					z-index: 999;
+					box-shadow: 0 0 6px rgba(0,0,0,0.5);
+					a.btn {
+						.make-color-btn(@color-blue, @color-blue-dark, #fff);
+					}
+				}
+			}
         }
+        #navbar-header {
+			padding-top: 0.25em;
+		}
         
         .navbar-main {
         
@@ -103,24 +136,26 @@ body {
 /* Search form
 --------------------------------------- */
 .search-bar {
+	float: right;
     position: relative;
     min-height: 3.5em;
+    padding-left: 1.65em;
     
     form {
-        position: absolute;
-        right: 0;
     
         fieldset {
+			display: inline-block;
+			position: relative;
             padding: 0;
             border: 0;
+            margin: 0;
         }
         .field {
             margin: 0;
             padding: 0;
         }
         input.text {
-            width: 155px;
-            padding: 5px 34px 5px 15px;
+            padding: 3px 34px 3px 15px;
             color: #888;
             margin: 0;
             border: none;
@@ -128,18 +163,19 @@ body {
             background: @color-white;
         }
         input.action {
+			position: absolute;
+			right: 0.25em;
+			top: 1px;
             font-size: 14px;
-            position: absolute;
-            right: 5px;
-            top: 0;
             cursor: pointer;
             border: none;
             padding: 5px;
             background: none;
-            font-family: 'WebSymbolsRegular';
+            font-family: 'FontAwesome';
             color: @color-gray-dark;
             border-radius: 0;
             margin: 0;
+            z-index:9;
         }
         input.active,
         input.action:hover {

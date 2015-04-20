@@ -22,23 +22,22 @@
                 <% end_if %>
             </div>
 
-            <div class="navigation unit-66 <% if not $SearchForm %>no-searchform<% end_if %>">
-                <div class="units-row end">
-                    <nav id="navbar-header" class="navbar navbar-right">
-                        <ul class="small">
+            <div class="navigation unit-66 <% if not $SearchForm %>no-searchform<% end_if %>">    
+				<div class="units-row end">
+					<% if $SearchForm %>
+						<div class="units-row end search-bar small">
+							$SearchForm
+						</div>
+					<% end_if %>
+					<nav id="navbar-header" class="navbar navbar-right">
+						<ul class="small">
 							$UserAccountNav
-                            <li class="cart">
-                                $ShoppingCart.ViewCartButton
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                
-                <% if $SearchForm %>
-                    <div class="units-row end search-bar">
-                        $SearchForm
-                    </div>
-                <% end_if %>
+							<li class="cart">
+								$ShoppingCart.ViewCartButton
+							</li>
+						</ul>
+					</nav> 
+				</div>
                 
                 <div class="units-row end">
                     <nav id="navbar-main" class="navbar navbar-right">
