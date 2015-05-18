@@ -205,6 +205,7 @@ input[type="checkbox"] {
   font-size: 110%;
   position: relative;
   top: -1px;
+  margin-right: 3px;
 }
 /* Normalize search fields */
 input[type="search"] {
@@ -565,6 +566,29 @@ input[type="datetime-local"] {
   position: relative;
   z-index: 2;
   -webkit-appearance: none;
+}
+textarea[disabled],
+input[type="text"][disabled],
+input[type="password"][disabled],
+input[type="email"][disabled],
+input[type="url"][disabled],
+input[type="phone"][disabled],
+input[type="tel"][disabled],
+input[type="number"][disabled],
+input[type="datetime"][disabled],
+input[type="date"][disabled],
+input[type="month"][disabled],
+input[type="color"][disabled],
+input[type="time"][disabled],
+input[type="search"][disabled],
+input[type="datetime-local"][disabled] {
+  resize: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+select[disabled],
+input[type="checkbox"][disabled],
+input[type="radio"][disabled] {
+  cursor: default;
 }
 input::-moz-focus-inner,
 button::-moz-focus-inner {
