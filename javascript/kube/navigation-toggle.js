@@ -1,11 +1,12 @@
 /*
 	Navigation Toggle Tool
+
+	http://imperavi.com/kube/
+
+	Copyright (c) 2009-2014, Imperavi LLC.
 */
 (function($)
 {
-
-	"use strict";
-
 	// Plugin
 	$.fn.navigationToggle = function(options)
 	{
@@ -42,6 +43,9 @@
 			this.loadOptions(options);
 
 			this.$target = $(this.opts.target);
+
+			this.$toggle = this.$element.find('span');
+			this.$toggle.on('click', $.proxy(this.onClick, this));
 
 		    this.build();
 		    $(window).resize($.proxy(this.build, this));
@@ -82,21 +86,22 @@
 		},
 		build: function()
 		{
-			this.$toggle = this.$element.find('span');
-			this.$toggle.on('click', $.proxy(this.onClick, this));
-
 			var mq = window.matchMedia("(max-width: 767px)");
 			if (mq.matches)
 			{
 				// hide
-				this.$element.addClass('navigation-toggle-show').show();
-				this.$target.hide();
+				if (!this.$target.hasClass('navigation-target-show'))
+				{
+					this.$element.addClass('navigation-toggle-show').show();
+					this.$target.addClass('navigation-target-show').hide();
+				}
+
 			}
 			else
 			{
 				// show
 				this.$element.removeClass('navigation-toggle-show').hide();
-				this.$target.show();
+				this.$target.removeClass('navigation-target-show').show();
 			}
 		},
 		onClick: function(e)
@@ -106,13 +111,13 @@
 
 			if (this.isTargetHide())
 			{
-				this.$element.removeClass('navigation-toggle-show');
+				this.$element.addClass('navigation-toggle-show');
 				this.$target.show();
 				this.setCallback('show', this.$target);
 			}
 			else
 			{
-				this.$element.addClass('navigation-toggle-show');
+				this.$element.removeClass('navigation-toggle-show');
 				this.$target.hide();
 				this.setCallback('hide', this.$target);
 			}
