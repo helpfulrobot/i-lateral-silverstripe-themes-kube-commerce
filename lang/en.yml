@@ -1,1 +1,13 @@
-en: {  }
+en:
+  Catalogue:
+    FilterBy: 'Filter by'
+    RelatedProducts: 'Related Products'
+  Checkout:
+    CartIsEmpty: 'Your cart is currently empty'
+    ViewCart: 'View Cart'
+  Users:
+    HELLO: Hi
+    LOGIN: 'Log in'
+    LOGOUT: Logout
+    MYACCOUNT: 'My account'
+    REGISTER: Register
