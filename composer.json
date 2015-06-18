@@ -17,9 +17,11 @@
 	},
 	"require": {
         "composer/installers": "*",
-        "silverstripe/framework": ">=3.0",
-        "i-lateral/silverstripe-commerce": "2.0.*@dev"
+        "silverstripe/framework": ">=3.1"
 	},
+    "suggest": {
+        "i-lateral/silverstripe-commerce": "Add ecommerce functionality (beta)"
+    },
 	"extra": {
 		"installer-name": "kube-commerce"
 	}
